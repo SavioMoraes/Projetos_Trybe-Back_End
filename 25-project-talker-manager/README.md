@@ -30,7 +30,6 @@ Neste projeto, verificamos se você é capaz de:
 - Entender a estrutura de uma aplicação Express e como organizar seu código;
 - Criar rotas e aplicar middlewares.
 
-## Lista de requisitos
 
 ### Observações
 
