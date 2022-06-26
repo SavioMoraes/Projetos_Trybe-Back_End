@@ -1,0 +1,116 @@
+body {
+    background-image: url("./background_whatsap_black.jpg");
+    background-color: cornflowerblue;
+    padding: 3px;
+    margin-top: 50px;
+    border-radius: 3px;
+    /* box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.95); */
+    height: 700px;
+}  
+
+main {
+    display: flex;
+}
+
+header {
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 0 0 .7em red;
+    width: 15%;
+}
+
+h1 {
+    color: white;
+    font-size: 140%;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.users-on, .nick-text{
+    color: azure;
+}
+
+.nickname {
+    padding: 2px;
+    margin-left: 20px;
+    width: 35%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 90%;
+}
+
+#formMessages {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: .85em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0 0 .7em red;
+}
+
+button {
+    background-color: rgba(255, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 0, 0, 0.6);
+    border-radius: 10px;
+    border: none;
+}
+
+input:placeholder-shown {
+    padding-left: 8px;
+}
+
+input:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#ulMessages {
+    overflow-y:auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#divConnectedUsers {
+    overflow-y:auto;
+    height: 300px;
+    width: 50%;
+    text-align: left;
+}
