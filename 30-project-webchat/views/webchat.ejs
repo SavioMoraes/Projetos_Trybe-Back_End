@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Webchat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Webchat</h1>
+
+    <h2 class="users-on">Usuários online</h2>
+    <div id="divConnectedUsers">Usuários online:</div>
+
+    <h2 class="nick-text">Coloque seu apelido aqui:</h2>
+    <form id="formNickname">
+      <input id="inputNickname" data-testid="nickname-box" placeholder="Digite seu apelido aqui">
+      <button data-testid="nickname-button">Mudar Apelido</button>
+    </form>
+
+    <section>
+      <ul id="ulMessages">
+        <% messages.forEach((message) => { %>
+          <li data-testid="message"> <%= `${message.timestamp} - ${message.nickname}: ${message.message} `%> </li>
+        <% }) %>
+      </ul>
+    </section>
+
+    <form id="formMessages">
+      <input id="inputMessage" autocomplete="off" data-testid="message-box">
+      <button type="submit" data-testid="send-button">Enviar mensagem</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/webchat.js"></script>
+</body>
+</html>
